@@ -67,8 +67,13 @@ class PyChain:
 # Streamlit Code
 
 # Adds the cache decorator for Streamlit
-
-
+'''def setup():
+    chached_data = st.session_state.get("pychain")
+    if chached_data is None:
+        st.session_state.pychain = PyChain([Block(data="Genesis", creator_id=0)])
+        return st.session_state['pychain']
+    return chached_data
+'''
 @st.cache(allow_output_mutation=True)
 def setup():
     print("Initializing Chain")

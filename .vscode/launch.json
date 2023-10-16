@@ -1,0 +1,22 @@
+{
+    // "Find out the location of streanlit;",
+    // "On macos, use the "which streamtit" command in the terminat.",
+    //I *On Windows, use "where streamtit' in Command Prompt or "Get-Command streamtit" in Powershell.",
+    
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Debug Streamlit",
+                "type": "python",
+                "request": "launch",
+                "program": "/Users/nariman/anaconda3/bin/streamlit",
+                "args": [
+                    "run",
+                    "blockchain_plain.py"
+                ],
+                "console": "externalTerminal",
+                "justMyCode": true
+            }
+        ]
+}
+    
